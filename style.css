@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Permanent+Marker&family=Smooch&family=Titan+One&display=swap');
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #000000;
+    font-family: "Comfortaa", sans-serif;
+  }
+  
+  h1 {
+    font-family: Titan One, cursive;
+    color: white;
+  }
+  
+  .message {
+    color: #fff;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-family:Macondo, cursive;
+  }
+  
+  form {
+    
+  }
+
+
+  label {
+    font-size: 4em;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white
+  }
+  input[type=radio] {
+    margin: 1em;
+    cursor: pointer;
+  }
+
+    input[type=radio]:checked {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+  fieldset {
+    display: block;
+    opacity: 1;
+    transition: all ease 1s;  
+    width: fit-content
+  }
+  .game-on fieldset {
+    opacity: 0;
+    display: none;
+  }    
+  .game-on button {
+    opacity: 1;
+    display: block;
+    margin: 0 auto;
+  }
+ 
+  
+  #grid-section {
+    margin: 3em 0;
+  }
+  
+  #grid {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  li {
+    border: 5px solid rgb(108, 46, 46);
+    display: block;
+    float: left;
+    height: 140px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:6em;
+    color: white
+
+    
+
+    
+    
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+  
+  #b1, #b2, #b3 {
+    border-top: none;
+  }
+  
+  #b3, #b6, #b9 {
+    border-right: none;
+  }
+  
+  #b7, #b8, #b9 {
+    border-bottom: none;
+  }
+  
+  #b1, #b4, #b7 {
+    border-left: none;
+  }
+  
+  .win {
+    color: #1eff00;
+  }
+  
+  .btn-primary, 
+  .btn-primary:focus {
+    background-color: #d8bd93;
+    opacity: 0;
+    outline: 0;  
+    transition: all ease .3s;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .btn-primary:hover {
+    background-color: #493d41;
+    border-radius:10px;
+  }
+  
+  #reset {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 1px;
+    width: 100px;
+    height:50px;
+    font-family: Permanent Marker, cursive;
+    font-size: 2em;
+
+  }
